@@ -1,4 +1,4 @@
 module SocketRocket {
-header "SocketRocket.h"
+umbrella header "SocketRocket.h"
 export *
 }
