@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -20,7 +20,13 @@ let package = Package(
             path: "SocketRocket",
             publicHeadersPath: "PublicHeaders",
             cSettings: [
-                .headerSearchPath("Internal/**"),
+                .headerSearchPath("Internal"),
+                .headerSearchPath("Internal/Delegate"),
+                .headerSearchPath("Internal/IOConsumer"),
+                .headerSearchPath("Internal/Proxy"),
+                .headerSearchPath("Internal/RunLoop"),
+                .headerSearchPath("Internal/Security"),
+                .headerSearchPath("Internal/Utilities"),
             ]
         ),
     ]
